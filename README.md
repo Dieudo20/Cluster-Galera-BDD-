@@ -49,8 +49,8 @@ Par exemple, sur Srv1-D12:
 
 # [mysqld]
     ...
-    wsrep_cluster_address="gcomm://10.132.149.151,10.132.149.152"
-    wsrep_node_address='10.132.149.151'
+    wsrep_cluster_address="gcomm://10.10.10.30,10.10.10.40"
+    wsrep_node_address='10.10.10.30'
     wsrep_node_name='Srv1-D12'
     ...
 
@@ -58,8 +58,8 @@ Par exemple, sur Srv1-D12:
 
 # [mysqld]
     ...
-    wsrep_cluster_address="gcomm://10.132.149.151,10.132.149.152"
-    wsrep_node_address='10.132.149.152'
+    wsrep_cluster_address="gcomm://10.10.10.30,10.10.10.40"
+    wsrep_node_address='10.10.10.40'
     wsrep_node_name='Srv2-D12'
     ...
 
@@ -84,3 +84,4 @@ mysql -u root -p
 # Vérifiez l'état du cluster:
 
 show status like 'wsrep%';
+
